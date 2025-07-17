@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <hr>
+    <input type="number" name="base" id="base" onchange="Power()" />
+    <input type="number" name="exponent" id="exponent" />
+    <pre>
+    <script>
+			var value = prompt(`${name}, введите число для вычисления Факториала:`);
+			document.writeln(`<h2>${name}, Вы ввели значение ${value}</h2>`);
+			document.writeln(typeof (value));
+			let n = Number(value);
+			document.writeln(typeof (n));
+			let f = BigInt(1);
+			for (let i = 1n; i <= n; i++)
+			{
+				f *= i;
+			}
+			let result = String(f);
+			document.writeln(result.length);
+			document.write('<hr>');
+			function Power()
+			{
+				alert(`Основание степени: ${document.getElementById("base").value}`);
+			}
+		</script>
+	</pre>
+</body>
+</html>
